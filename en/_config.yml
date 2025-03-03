@@ -1,7 +1,9 @@
 # Site settings
 title:          “Makibara Muraon Official English Site"
 description:    "牧原村音公式オフィシャルサイト English"
-url:            "https://counta.github.io/muraonsite/en"
+baseurl:        "/muraonsite/en"
+url:            "https://counta.github.io/"
+
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
@@ -27,6 +29,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-polyglot
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
@@ -38,3 +41,10 @@ exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
 # Disqus (Set to your disqus id)
 disqus:         jekyll-tale
+
+# Multilanguage
+languages: ["ja", "en", "zh_CN"]
+default_lang: "ja"
+exclude_from_localization: ["javascript", "images", "css", "public", "sitemap", "assets", "_sass", "_layouts", "_includes"]
+parallel_localization: true
+url: https://counta.github.io/muraonsite
