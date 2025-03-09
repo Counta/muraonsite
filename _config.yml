@@ -45,3 +45,6 @@ default_lang: "ja"
 exclude_from_localization: ["javascript", "images", "css", "public", "sitemap", "assets", "_sass", "_layouts", "_includes"]
 parallel_localization: true
 url: https://counta.github.io/muraonsite
+
+- name: Jekyll Deploy Action
+  uses: jeffreytse/jekyll-deploy-action@v0.6.0
